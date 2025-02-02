@@ -42,14 +42,8 @@ public class LineRenderer implements HudRenderer {
             layout.addComponent(new LayoutContainerComponent(xyz));
         }
 
-        if (config().renderDirection) {
-            Component direction = definition(GlobalTexts.FACING, value(resolveDirection(ModUtil.getDirectionFromYaw(pos.headRot.wrapYaw()))));
-
-            layout.addComponent(new TextComponent(direction));
-        }
-
         int p = config().renderBackground ? config().padding : 0;
 
-        return new PaddingLayout(x, y, p, layout);
+        return new PaddingLayout(x, y, p,);
     }
 }
