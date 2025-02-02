@@ -44,6 +44,6 @@ public class LineRenderer implements HudRenderer {
 
         int p = config().renderBackground ? config().padding : 0;
 
-        return new PaddingLayout(x, y, p,);
+        return new PaddingLayout(x, y, p);
     }
 }
